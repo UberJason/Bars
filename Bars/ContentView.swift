@@ -11,13 +11,6 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             Sidebar()
-                .toolbar {
-                    ToolbarItem {
-                        Button(action: {}, label: {
-                            Image(systemName: "sidebar.left")
-                        })
-                    }
-                }
                 
             Text("No Master")
       

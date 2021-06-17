@@ -19,8 +19,18 @@ struct Sidebar: View {
                 }
             }
             Section("Tags") {
-                Label("Version 1.0", systemImage: "tag")
-                Label("Version 2.0", systemImage: "tag")
+                NavigationLink(destination: MasterList()) {
+                    Label("Version 1.0", systemImage: "tag")
+                }
+                NavigationLink(destination: MasterList()) {
+                    Label("Version 2.0", systemImage: "tag")
+                }
+                Button {
+                    
+                } label: {
+                    Label("Add Tag", systemImage: "plus")
+                }.buttonStyle(.plain)
+
             }
         }.listStyle(SidebarListStyle())
     }
